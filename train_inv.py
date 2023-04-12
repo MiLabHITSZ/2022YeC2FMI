@@ -82,8 +82,8 @@ if __name__ == '__main__':
     emb_backbone  = 'inception_resnetv1'
     tar_backbone  = 'mobile_net'
 
-    tar_classes   = 526
-    emb_classes   = 10575
+    tar_classes   = NUM_TAR_CLASS
+    emb_classes   = NUM_EMB_CLASS
 
     # mask
     trunc         = 1  # full=526
