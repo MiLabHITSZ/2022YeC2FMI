@@ -7,6 +7,7 @@ from torch.utils import data
 from models.predict2feature import predict2feature
 import os
 from utils.inv_dataset2 import InvDataset
+import numpy as np
 
 
 def train(p2f, optimizer, target_model, embed_model, train_loader, test_loader, ep):
