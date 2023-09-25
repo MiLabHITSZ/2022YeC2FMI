@@ -13,8 +13,8 @@ I have tested on:
 
 ### If you want to use our trained models, including styleGAN, target model, embedding model and inverse model (refer to Fig.4 in our paper):
 
-1. dowloed `checkpoint` (both folder and files) from .
-2. dowloed `trained_models` (both folder and files) from .
+1. dowloed `checkpoint` (both folder and files) from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
+2. dowloed `trained_models` (both folder and files) from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
 
 > python main_attack_antidefense.py
 
