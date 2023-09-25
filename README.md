@@ -16,7 +16,7 @@ I have tested on:
 1. download `checkpoint.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
 2. download `trained_models.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
 3. unzip and put these 2 folders in your project directory.
-
+4. running with command:
 > python main_attack_antidefense.py
 
 - note that you should create directory `gen_figures/DE_facescrub_mobile_M100_counter/` in your project before running since our code does not automatically generate it.
