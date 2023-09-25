@@ -19,6 +19,6 @@ I have tested on:
 
 > python main_attack_antidefense.py
 
-- note that you should create directory `gen_figures/DE_facescrub_mobile_M100_counter/` before running since our code does not automatically generate it.
+- note that you should create directory `gen_figures/DE_facescrub_mobile_M100_counter/` in your project before running since our code does not automatically generate it.
 
 ### Or you can train your own models and change the models in script `main_attack_antidefense.py`.
