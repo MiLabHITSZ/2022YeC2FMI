@@ -20,5 +20,6 @@ I have tested on:
 > python main_attack_antidefense.py
 
 - note that you should create directory `gen_figures/DE_facescrub_mobile_M100_counter/` in your project before running since our code does not automatically generate it.
+- changing the variables `init_label` and `fina_label` in `main_attack_antidefense.py`, attack will start at `init_label` and end at `fina_label`.
 
 ### Or you can train your own models and change the models in script `main_attack_antidefense.py`.
