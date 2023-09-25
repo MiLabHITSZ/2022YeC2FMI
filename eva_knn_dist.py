@@ -1,6 +1,6 @@
 import torch
-from networks.facenet import Facenet
-from train_facenet import get_num_classes
+from models.facenet import Facenet
+from utils.train_facenet import get_num_classes
 from utils.detect_crop_face import facenet_input_preprocessing, detect_crop_face
 from PIL import Image
 from torch.nn import functional as F
