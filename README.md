@@ -32,5 +32,5 @@ I have tested on:
 - please modify the annotated variables in `eva_accuracy.py` if using your customized dataset and models.
 
 ### If you want to evaluate the KNN-Dist, before run `eva_knn_dist.py`, you should note that:
-the settings of variables in `eva_knn_dist.py` is same as in `eva_accuracy.py`, except for the variable `train_txt`, which you can run `annotation_face_train.py` to generate it (a `.txt` file containing
+-the settings of variables in `eva_knn_dist.py` is same as in `eva_accuracy.py`, except for the variable `train_txt`, which you can run `annotation_face_train.py` to generate it (a `.txt` file containing
 the path of all training data). Note that you should modify the `datasets_path` in `annotation_face_train.py`.
