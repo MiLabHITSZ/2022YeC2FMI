@@ -28,3 +28,7 @@ I have tested on:
 
 ### If you have followed the simplest implementation, you can run the following command to evaluate the attack accuracy:
 > python eva_accuracy.py
+
+- please modify the annotated variables in `eva_accuracy.py` if using your customized dataset and models.
+- the settings of variables in `eva_knn_dist.py` is same as in `eva_accuracy.py`, except for the variable `train_txt`, which you can run `annotation_face_train.py` to generate it (a `.txt` file containing
+  the path of all training data). Note that you should modify the `datasets_path` in `annotation_face_train.py`.
