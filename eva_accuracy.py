@@ -1,6 +1,6 @@
 import torch
 from models.facenet import Facenet
-from utils.train_facenet import get_num_classes
+# from train_facenet import get_num_classes
 from utils.detect_crop_face import facenet_input_preprocessing, detect_crop_face
 from PIL import Image
 from torch.nn import functional as F
@@ -12,10 +12,10 @@ device        = 'cuda'
 img_size      = 256
 dataset       = 'facescrub'
 t_model_bone  = 'mobile_net'
-eva_backbone  = 'inception_resnetv1'
-facenet_path  = ''  # path to evaluation model
-num_classes   = get_num_classes('')
-img_dir       = ''
+eva_backbone  = 'mobile_facenet'
+facenet_path  = 'trained_models/FaceScrub-BackboneMobileFaceNet-Epoch4-Train_Acc0.992-Val_Acc0.971.pth'  # path to evaluation model
+num_classes   = 526
+img_dir       = 'gen_figures/DE_facescrub_mobile_M100_counter'
 face_shape    = [160, 160]
 all_id        = 526
 detector      = dlib.get_frontal_face_detector()
@@ -31,7 +31,7 @@ top5_acc_number = 0
 conf_sum   = 0
 for label in tqdm(range(all_id)):
     label_ = label
-    img_path      = f'{img_dir}/label{label_}.jpg'
+    img_path      = f'{img_dir}/de_label{label_}_best.jpg'
     img = Image.open(img_path)
     _, cropped = detect_crop_face(img, detector)
     face_input = facenet_input_preprocessing(cropped,(160,160)).to(device)
