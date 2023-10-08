@@ -23,3 +23,8 @@ I have tested on:
 - changing the variables `init_label` and `fina_label` in `main_attack_antidefense.py`, attack will start at `init_label` and end at `fina_label`.
 
 ### Or you can train your own models and change the models in script `main_attack_antidefense.py`.
+
+# How to evaluate
+
+### If you have followed the simplest implementation, you can run the following command to evaluate the attack accuracy:
+> python eva_accuracy.py
