@@ -20,7 +20,7 @@ def resize_img_gen_shape(img_gen, trans):
 
 def post_de(latent_in, generator, target_model, target_label, idx):
     x = latent_in[idx]
-    optim_DE = post_opt(target_model, generator, target_label, direct='gen_figures/DE_og_casia3_incep/')
+    optim_DE = post_opt(target_model, generator, target_label, direct='gen_figures/DE_facescrub/')
     # task = DE_c2b_5_bin(optim_DE, max_gen=300, x=x)
     task = DE_c2b_5_bin2(optim_DE, max_gen=500, x=x)
     task.run(disturb=0.00)
@@ -125,13 +125,13 @@ if __name__ == '__main__':
     emb_pth       = 'trained_models/casia-InceptionResnet-Train_Acc0.984-Val_Acc0.971.pth'
 
     # path of the inverse model
-    p2f_dir       = 'checkpoint/10_pre2feat_FM2CI_keep100_loss_3.9467.pt'
+    p2f_dir       = 'checkpoint2/90_pre2feat_og_FM2CI.pt'
 
     emb_backbone  = 'inception_resnetv1'
     tar_backbone  = 'mobile_net'
 
-    tar_classes   = 10575
-    emb_classes   = 526
+    tar_classes   = 526
+    emb_classes   = 10575
 
     input_latent  = True
     init_lr       = 0.02
