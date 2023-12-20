@@ -11,6 +11,8 @@ I have tested on:
 
 # The Simplest Implementation
 
+## Attack Anti-Defense
+
 ### If you want to use our trained models, including styleGAN, target model, embedding model and inverse model (refer to Fig.4 in our paper):
 
 1. download `checkpoint.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
@@ -23,6 +25,21 @@ I have tested on:
 - changing the variables `init_label` and `fina_label` in `main_attack_antidefense.py`, attack will start at `init_label` and end at `fina_label`.
 
 ### Or you can train your own models and change the models in script `main_attack_antidefense.py`.
+
+## Attack without Defense
+
+### If you want to use our trained models, including styleGAN, target model, embedding model and inverse model (refer to Fig.4 in our paper):
+
+1. download `checkpoint2.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
+2. download `trained_models.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
+3. unzip and put these 2 folders in your project directory.
+4. running with command:
+> python main_attack.py
+
+- note that you should create directory `gen_figures/DE_facescrub/` in your project before running since our code does not automatically generate it.
+- changing the variables `init_label` and `fina_label` in `main_attack.py`, attack will start at `init_label` and end at `fina_label`.
+
+### Or you can train your own models and change the models in script `main_attack.py`.
 
 # How to evaluate
 
