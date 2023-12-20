@@ -23,7 +23,7 @@ def post_de(latent_in, generator, target_model, target_label, idx):
     x = latent_in[idx]
     optim_DE = post_opt(target_model, generator, target_label, trunc, direct=f'gen_figures/DE_facescrub_mobile_M{trunc}_counter/')
     # task = DE_c2b_5_bin(optim_DE, max_gen=300, x=x)
-    task = DE_c2b_5_bin2(optim_DE, max_gen=250, x=x)
+    task = DE_c2b_5_bin2(optim_DE, max_gen=500, x=x)
     task.run(disturb=0.00)
     task.get_img(32, only_best=True)
 
