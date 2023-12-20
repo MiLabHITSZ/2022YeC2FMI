@@ -15,7 +15,7 @@ I have tested on:
 
 ### If you want to use our trained models, including styleGAN, target model, embedding model and inverse model (refer to Fig.4 in our paper):
 
-![avatar](/custom_data/figures/fig_4.jpg)
+![avatar](/figures/fig_4.jpg)
 
 1. download `checkpoint.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
 2. download `trained_models.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
@@ -43,7 +43,7 @@ Or you can train your own models and change the models in script `main_attack_an
 
 Or you can train your own models and change the models in script `main_attack.py`.
 
-![avatar](/custom_data/figures/fig_10.jpg)
+![avatar](/figures/fig_10.jpg)
 
 # How to evaluate
 
