@@ -15,7 +15,7 @@ I have tested on:
 
 ### If you want to use our trained models, including styleGAN, target model, embedding model and inverse model (refer to Fig.4 in our paper):
 
-![avatar](/custom_data/figures/fig_4.pdf)
+![avatar](/custom_data/figures/fig_4.jpg)
 
 1. download `checkpoint.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
 2. download `trained_models.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
@@ -42,6 +42,8 @@ Or you can train your own models and change the models in script `main_attack_an
 - changing the variables `init_label` and `fina_label` in `main_attack.py`, attack will start at `init_label` and end at `fina_label`.
 
 Or you can train your own models and change the models in script `main_attack.py`.
+
+![avatar](/custom_data/figures/fig_10.jpg)
 
 # How to evaluate
 
