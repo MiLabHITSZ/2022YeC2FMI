@@ -11,7 +11,7 @@ I have tested on:
 
 # The Simplest Implementation
 
-## Attack Anti-Defense
+## 1. Attack Anti-Defense
 
 ### If you want to use our trained models, including styleGAN, target model, embedding model and inverse model (refer to Fig.4 in our paper):
 
@@ -26,7 +26,7 @@ I have tested on:
 
 ### Or you can train your own models and change the models in script `main_attack_antidefense.py`.
 
-## Attack without Defense
+## 2. Attack without Defense
 
 ### If you want to use our trained models, including styleGAN, target model, embedding model and inverse model (refer to Fig.4 in our paper):
 
